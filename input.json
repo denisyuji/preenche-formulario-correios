@@ -1,0 +1,30 @@
+{
+	"Sender": {
+		"Name": "Vinicius de Moraes",
+		"Address": "R. Flamengo - Itapuã",
+		"City": "Salvador",
+		"State": "BA",
+		"Zip": "41635-480",
+		"Tax_id": "986.543.210-00"
+	},
+	"Receiver": {
+		"Name": "Tom Jobim",
+		"Address": "Rua Nascimento e Silva 107",
+		"City": "Rio de Janeiro",
+		"State": "RJ",
+		"Zip": "22421-025",
+		"Tax_id": "123.456.789-00"
+	},
+	"Itens": [
+		{
+			"Name": "Livros",
+			"Qty": 3,
+			"Price": 42.10
+		},
+		{
+			"Name": "Discos",
+			"Qty": 2,
+			"Price": 10.00
+		}
+	]
+}
