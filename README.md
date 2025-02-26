@@ -67,8 +67,7 @@ Após preencher o "input.json" com os dados desejados, execute o script:
 python fill_form.py
 ```
 
-O script irá gerar um PDF chamado "output.pdf" com os dados preenchidos.
-O PDF também será exibido em uma janela gráfica. Para sair da janela, basta pressionar "Q" no teclado (na GUI ou no terminal).
+O script irá gerar um PDF chamado "output.pdf" com os dados preenchidos. O PDF também será exibido em uma janela gráfica.
 
 ## Nota de Confiabilidade ##
 
