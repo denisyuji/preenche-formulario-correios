@@ -10,64 +10,56 @@ Este script foi desenvolvido para facilitar o preenchimento do [Formulário de D
 - Instalar as dependências necessárias utilizando o pip:
 
 ```
-pip install reportlab PyPDF2 pdf2image Pillow
+pip install -r requirements.txt
 ```
 
-- No Ubuntu, certifique-se de que o pacote poppler-utils esteja instalado:
+### Preencha o arquivo "dados.json" ###
 
-```
-sudo apt-get install poppler-utils
-```
-
-- O script utiliza a fonte "DejaVuSans", que já vem instalada por padrão no Ubuntu.
-
-### Preencha o arquivo "input.json" ###
-
-O arquivo "input.json" deve conter os dados do remetente, destinatário e itens,
+O arquivo "dados.json" deve conter os dados do remetente, destinatário e itens,
 conforme o exemplo abaixo:
 
 ```
 {
- "Sender": {
-   "Name": "Nome do Remetente",
-   "Address": "Endereço do Remetente",
-   "City": "Cidade do Remetente",
-   "State": "Estado",
-   "Zip": "CEP",
-   "Tax_id": "CPF/CNPJ"
- },
- "Receiver": {
-   "Name": "Nome do Destinatário",
-   "Address": "Endereço do Destinatário",
-   "City": "Cidade do Destinatário",
-   "State": "Estado",
-   "Zip": "CEP",
-   "Tax_id": "CPF/CNPJ"
- },
- "Itens": [
-   {
-     "Name": "Nome do Item 1",
-     "Qty": 2,
-     "Price": 45.50
-   },
-   {
-     "Name": "Nome do Item 2",
-     "Qty": 1,
-     "Price": 30.00
-   }
- ]
+	"Remetente": {
+		"Nome": "Vinicius de Moraes",
+		"Endereco": "R. Flamengo - Itapuã",
+		"Cidade": "Salvador",
+		"Estado": "BA",
+		"CEP": "41635-480",
+		"CPF_CNPJ": "986.543.210-00"
+	},
+	"Destinatario": {
+		"Nome": "Tom Jobim",
+		"Endereco": "Rua Nascimento e Silva 107",
+		"Cidade": "Rio de Janeiro",
+		"Estado": "RJ",
+		"CEP": "22421-025",
+		"CPF_CNPJ": "123.456.789-00"
+	},
+	"Itens": [
+		{
+			"Nome": "Livros",
+			"Quantidade": 3,
+			"Preco": 42.10
+		},
+		{
+			"Nome": "Discos",
+			"Quantidade": 2,
+			"Preco": 10.00
+		}
+	]
 }
 ```
 
 ### Executando o Script: ###
 
-Após preencher o "input.json" com os dados desejados, execute o script:
+Após preencher o "dados.json" com os dados desejados, execute o script:
 
 ```
-python fill_form.py
+python preenche_formulario.py
 ```
 
-O script irá gerar um PDF chamado "output.pdf" com os dados preenchidos. O PDF também será exibido em uma janela gráfica.
+O script irá gerar um PDF chamado "formulario_preenchido.pdf" com os dados preenchidos.
 
 ## Nota de Confiabilidade ##
 

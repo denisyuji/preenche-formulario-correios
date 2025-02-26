@@ -1,0 +1,30 @@
+{
+	"Remetente": {
+		"Nome": "Vinicius de Moraes",
+		"Endereco": "R. Flamengo - Itapuã",
+		"Cidade": "Salvador",
+		"Estado": "BA",
+		"CEP": "41635-480",
+		"CPF_CNPJ": "986.543.210-00"
+	},
+	"Destinatario": {
+		"Nome": "Tom Jobim",
+		"Endereco": "Rua Nascimento e Silva 107",
+		"Cidade": "Rio de Janeiro",
+		"Estado": "RJ",
+		"CEP": "22421-025",
+		"CPF_CNPJ": "123.456.789-00"
+	},
+	"Itens": [
+		{
+			"Nome": "Livros",
+			"Quantidade": 3,
+			"Preco": 42.10
+		},
+		{
+			"Nome": "Discos",
+			"Quantidade": 2,
+			"Preco": 10.00
+		}
+	]
+}
